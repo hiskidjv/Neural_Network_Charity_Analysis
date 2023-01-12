@@ -7,25 +7,27 @@
 >Ultimately I was unsuccessful after 10 or more optimization attempts to achieve the 75% accuracy score.  See answers to questions as follows:
 
 ### Data Preprocessing
-*What variable(s) are considered the target(s) for your model?
+
+* What variable(s) are considered the target(s) for your model?
 > I identified the "IS_SUCCESSFUL" variable as the main target column.
 
-*What variable(s) are considered to be the features for your model?
+* What variable(s) are considered to be the features for your model?
 > There were several features as pictured below:
      ![Features](Resources/Features.png)
 
-*What variable(s) are neither targets nor features, and should be removed from the input data?
+* What variable(s) are neither targets nor features, and should be removed from the input data?
 > I removed EIN (identification number) and NAME columns.
 
 ### Compiling, Training, and Evaluating the Model
-*How many neurons, layers, and activation functions did you select for your neural network model, and why?
+
+* How many neurons, layers, and activation functions did you select for your neural network model, and why?
 >In the model pictured here, I tried to stay small (only 9 neurons) even though there were 44 input features.  I was concerned about having too complex of a model to start with.  88 was 10 times more than I was used to seeing. I instead added a second layer with 3 more neurons in hopes of improving performance. 
      ![Original Model](Resources/Model1.png)
 
-*Were you able to achieve the target model performance?
+* Were you able to achieve the target model performance?
 >No
 
-What steps did you take to try and increase model performance?
+* What steps did you take to try and increase model performance?
 >In the model pictured here, I chose to add additional neurons to each of the three layers that I had started with. I tried to change the third layer to a sigmoid function and had descending numbers of neurons in each layer.  This was after several iterative attempts at improvement, and with a hope of narrowing the risk of overfitting from so many parameters overall.
      ![Optimization Attempt](Resources/Model.png)
 
